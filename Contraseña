@@ -1,0 +1,29 @@
+
+package contraseña;
+
+import javax.swing.JOptionPane;
+
+
+public class Contraseña {
+
+    
+    public static void main(String[] args) {
+        
+        int pin= 8520;
+        int ingresarpin;
+        String mensaje;
+        ingresarpin=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el pin"));
+        
+        for(int i=0; i<3; i++){
+            
+            if(ingresarpin==pin){
+                mensaje= "Pin correcto :D";
+            }
+            else{
+                mensaje="Pin incorrecto :c";
+            }
+        JOptionPane.showMessageDialog(null, mensaje);
+        }
+    }
+    
+}
