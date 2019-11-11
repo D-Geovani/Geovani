@@ -1,0 +1,28 @@
+
+package numeros;
+
+import javax.swing.JOptionPane;
+
+public class Numeros {
+
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        double num;
+        String mensaje =" ";
+        
+        num= Double.parseDouble(JOptionPane.showInputDialog("ingrese un numero:"));
+        if(num>0){
+            mensaje= "El numero que ingreso es positivo";
+        }
+        if(num<0){
+            mensaje= "El numero que ingreso es negativo";
+        }
+        else if(num==0){
+            mensaje= "EL numero que ingreso es cero";
+        }
+        
+        JOptionPane.showMessageDialog(null, mensaje);
+    }
+    
+}
